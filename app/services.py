@@ -28,4 +28,18 @@ class showChars:
         n = Char(na, stat, spec, gen, ori, img, id)
         self.chars[data['id']] = n
         
-r_m = showChars()
+    def build_base(self):
+        self.add_char(1)
+        self.add_char(2)
+        self.add_char(3)
+        self.add_char(4)
+        self.add_char(5)
+        self.add_char(6)
+        self.add_char(7)
+        self.add_char(8)
+        self.add_char(9)
+        self.add_char(10)
+        self.add_char(11)
+
+
+

@@ -36,21 +36,34 @@
             </div>
         </div>
     </nav>
-{% block content %}
-<div class="sum-grid">
-    <div class="rickhead">rickhead</div>
-    <div class="mortyhead">mortyhead</div>
-    <div class="bethhead">bethhead</div>
-    <div class="summerhead">summerhead</div>
-    <div class="jerryhead">jerryhead</div>
-    <div class="ran1">ran1</div>
-    <div class="ran2">ran2</div>
-    <div class="ran3">ran3</div>
-    <div class="ran4">ran4</div>
-    <div class="ran5">ran5</div>
-    <div class="ran6">ran6</div>
-  </div>
-{% endblock content%}
+    {% block content %}
+    <div class="sum-grid">
+        <div class="rickhead">
+            <h1>{{ r_m.chars[1].name}}</h1><img class="img-fluid" src="{{ r_m.chars[1].image }}"
+                alt="{{ r_m.chars[1].name }}">
+        </div>
+        <div class="mortyhead"><h1>{{ r_m.chars[2].name}}</h1><img class="img-fluid" src="{{ r_m.chars[2].image }}"
+            alt="{{ r_m.chars[2].name }}"></div>
+        <div class="bethhead"><h2>{{ r_m.chars[3].name}}</h2><img class="img-fluid" src="{{ r_m.chars[3].image }}"
+            alt="{{ r_m.chars[3].name }}"></div>
+        <div class="summerhead"><h2>{{ r_m.chars[4].name}}</h2><img class="img-fluid" src="{{ r_m.chars[4].image }}"
+            alt="{{ r_m.chars[4].name }}"></div>
+        <div class="jerryhead"><h2>{{ r_m.chars[5].name}}</h2><img class="img-fluid" src="{{ r_m.chars[5].image }}"
+            alt="{{ r_m.chars[5].name }}"></div>
+        <div class="ran1"><h5>{{ r_m.chars[6].name}}</h5><img class="img-fluid" src="{{ r_m.chars[6].image }}"
+            alt="{{ r_m.chars[6].name }}"></div>
+        <div class="ran2"><h5>{{ r_m.chars[7].name}}</h5><img class="img-fluid" src="{{ r_m.chars[7].image }}"
+            alt="{{ r_m.chars[7].name }}"></div>
+        <div class="ran3"><h5>{{ r_m.chars[8].name}}</h5><img class="img-fluid" src="{{ r_m.chars[8].image }}"
+            alt="{{ r_m.chars[8].name }}"></div>
+        <div class="ran4"><h5>{{ r_m.chars[9].name}}</h5><img class="img-fluid" src="{{ r_m.chars[9].image }}"
+            alt="{{ r_m.chars[9].name }}"></div>
+        <div class="ran5"><h5>{{ r_m.chars[10].name}}</h5><img class="img-fluid" src="{{ r_m.chars[10].image }}"
+            alt="{{ r_m.chars[10].name }}"></div>
+        <div class="ran6"><h5>{{ r_m.chars[11].name}}</h5><img class="img-fluid" src="{{ r_m.chars[11].image }}"
+            alt="{{ r_m.chars[11].name }}"></div>
+    </div>
+    {% endblock content%}
 </body>
 
 </html>
