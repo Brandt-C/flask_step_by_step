@@ -7,33 +7,36 @@
 <h1>Morty</h1>
 <div class="card-group">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="{{r_m.chars[14].image}}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">is content is a little bit longer.</p>
+        <h5 class="card-title">{{r_m.chars[14].name}}</h5>
+        <p class="card-text">Status: {{r_m.chars[14].status}}<br>Species: {{r_m.chars[14].species}}<br>
+        Gender: {{r_m.chars[14].gender}}<br></p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Origin: {{r_m.chars[14].origin}}</small>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="{{r_m.chars[21].image}}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">{{r_m.chars[21].name}}</h5>
+        <p class="card-text">Status: {{r_m.chars[21].status}}<br>Species: {{r_m.chars[21].species}}<br>
+          Gender: {{r_m.chars[21].gender}}<br></p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Origin: {{r_m.chars[21].origin}}</small>
       </div>
     </div>
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="{{r_m.chars[27].image}}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h5 class="card-title">{{r_m.chars[27].name}}</h5>
+        <p class="card-text">Status: {{r_m.chars[27].status}}<br>Species: {{r_m.chars[27].species}}<br>
+          Gender: {{r_m.chars[27].gender}}<br></p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Origin: {{r_m.chars[27].origin}}</small>
       </div>
     </div>
   </div>

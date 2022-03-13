@@ -2,17 +2,18 @@
 
 {% block content %}
 
-<h1>Random Character</h1>
+<h1>Some random characters:</h1>
+<h3>The bizarre characters of this show are one of the main highlights so here are some examples-</h3>
 <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="...">
+        <img src="{{r_m.chars[a].image}}" class="img-fluid rounded-start" alt="random character image">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">{{r_m.chars[a].name}}</h5>
+          <p class="card-text">Status: {{r_m.chars[a].status}}<br>Species: {{r_m.chars[a].species}}<br>Gender: {{r_m.chars[a].gender}}</p>
+          <p class="card-text"><small class="text-muted">Origin: {{r_m.chars[a].origin}}</small></p>
         </div>
       </div>
     </div>
@@ -20,13 +21,13 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="...">
+        <img src="{{r_m.chars[b].image}}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">{{r_m.chars[b].name}}</h5>
+          <p class="card-text">Status: {{r_m.chars[b].status}}<br>Species: {{r_m.chars[b].species}}<br>Gender: {{r_m.chars[b].gender}}</p>
+          <p class="card-text"><small class="text-muted">Origin: {{r_m.chars[b].origin}}</small></p>
         </div>
       </div>
     </div>
@@ -34,13 +35,13 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="...">
+        <img src="{{r_m.chars[c].image}}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">{{r_m.chars[c].name}}</h5>
+          <p class="card-text">Status: {{r_m.chars[c].status}}<br>Species: {{r_m.chars[c].species}}<br>Gender: {{r_m.chars[c].gender}}</p>
+          <p class="card-text"><small class="text-muted">Origin: {{r_m.chars[c].origin}}</small></p>
         </div>
       </div>
     </div>
@@ -48,13 +49,13 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="...">
+        <img src="{{r_m.chars[d].image}}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">{{r_m.chars[d].name}}</h5>
+          <p class="card-text">Status: {{r_m.chars[d].status}}<br>Species: {{r_m.chars[d].species}}<br>Gender: {{r_m.chars[d].gender}}</p>
+          <p class="card-text"><small class="text-muted">Origin: {{r_m.chars[d].origin}}</small></p>
         </div>
       </div>
     </div>
@@ -62,13 +63,13 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="...">
+        <img src="{{r_m.chars[e].image}}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title">{{r_m.chars[e].name}}</h5>
+          <p class="card-text">Status: {{r_m.chars[e].status}}<br>Species: {{r_m.chars[e].species}}<br>Gender: {{r_m.chars[e].gender}}</p>
+          <p class="card-text"><small class="text-muted">Origin: {{r_m.chars[e].origin}}</small></p>
         </div>
       </div>
     </div>
