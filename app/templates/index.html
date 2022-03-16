@@ -34,10 +34,24 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('rando')}}">Random</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('user.signin')}}"></a><img src="../static/images/ep_icon.jpg" alt="icon" width="90" height="35"
+                    class="d-inline-block align-text-top">Cool Stuff Broh!</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    {% endfor %}
+            </div>
+                {% endif %}
+                {% endwith %}
     {% block content %}
     <div class="sum-grid">
         <div class="rickhead">

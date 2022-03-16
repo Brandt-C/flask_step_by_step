@@ -3,6 +3,8 @@ from app import app
 from flask import render_template
 from .services import *
 from random import randrange
+#from .forms import "ClassForm"
+
 
 @app.route('/')
 def home():
@@ -42,3 +44,4 @@ def rando():
     r_m.add_char(d)
     r_m.add_char(e)
     return render_template('rando.html', r_m = r_m, a = a, b = b, c = c, d = d, e=e)
+
