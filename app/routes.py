@@ -15,10 +15,9 @@ def home():
 @app.route('/morty')
 def morty():
     r_m = showChars()
-    r_m.build_base()
-    r_m.add_char(14)
-    r_m.add_char(21)
-    r_m.add_char(27)
+    r_m.add_char(43)
+    r_m.add_char(61)
+    r_m.add_char(84)
     return render_template('morty.html', r_m = r_m)
 
 @app.route('/rick')
@@ -26,7 +25,7 @@ def rick():
     r_m = showChars()
     r_m.add_char(1)
     r_m.add_char(15)
-    r_m.add_char(19)
+    r_m.add_char(760)
     r_m.add_char(22)
     return render_template('rick.html', r_m = r_m)
 
